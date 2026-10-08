@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMate – To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+            <h1>TaskMate</h1>
+            <p>Stay organised, one task at a time.</p>
+        </header>
+
+        <div class="add-task-box">
+            <div class="input-row">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter a new task..."
+                    maxlength="150"
+                    autocomplete="off"
+                >
+                <button id="addBtn">Add Task</button>
+            </div>
+            <p class="error-msg" id="errorMsg"></p>
+        </div>
+
+        <div class="filter-row">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="task-counter" id="taskCounter">
+            Total: 0 &nbsp;|&nbsp; Active: 0 &nbsp;|&nbsp; Completed: 0
+        </div>
+
+        <ul class="task-list" id="taskList"></ul>
+
+        <p class="empty-msg" id="emptyMsg">No tasks yet. Add one above!</p>
+
+    </div>
+
+    <footer class="app-footer">
+        <p>© 2026 Swati Singh &nbsp;|&nbsp; TaskMate</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
